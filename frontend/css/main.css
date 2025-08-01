@@ -1,0 +1,97 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Wallpaper Grid */
+.wallpaper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Wallpaper Card */
+.wallpaper-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s;
+}
+
+.wallpaper-card:hover {
+  transform: scale(1.02);
+}
+
+.wallpaper-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Icons */
+.icon-bar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 22px;
+  color: #ffffffcc;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #ff4c4c;
+}
+
+/* Active (liked) heart */
+.heart.liked {
+  color: #ff4c4c;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 16px;
+  background-color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+}
+
+.navbar a {
+  color: #ffffffaa;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}

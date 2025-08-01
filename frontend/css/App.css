@@ -1,0 +1,37 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fullscreen layout */
+body, html, #root {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App styling */
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+/* Title */
+.title {
+  font-size: 1.5rem;
+}
+
+/* Message from Flask */
+.message {
+  font-size: 1.25rem;
+  color: #424242;
+  background-color: #ffffffaa;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

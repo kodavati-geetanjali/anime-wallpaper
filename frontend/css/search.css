@@ -1,0 +1,56 @@
+.search-results {
+  padding: 5rem 1rem 1rem 1rem;
+}
+
+.wallpaper-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.wallpaper-card:hover {
+  transform: scale(1.03);
+}
+
+.wallpaper-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination-button {
+  padding: 8px 15px;
+  background-color: #facc15;
+  color: #1e293b;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #eab308;
+}
+
+.page-number {
+  font-weight: bold;
+  color: #1e293b;
+}
